@@ -179,6 +179,7 @@ def task_notify(**context):
             row = cur.fetchone()
     finally:
         conn.close()
+        
 
     # แสดง summary ใน Airflow logs
     msg = (
